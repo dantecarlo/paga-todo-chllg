@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Card> render correctly 1`] = `
+exports[`<Card /> render correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

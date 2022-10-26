@@ -1,7 +1,8 @@
-import Card from 'components/shared/Card'
 import { cleanup, render, RenderResult } from 'utils/testUtils'
 
-describe('<Card>', () => {
+import Card from './Card'
+
+describe('<Card />', () => {
   let component: RenderResult
 
   beforeEach(() => {
