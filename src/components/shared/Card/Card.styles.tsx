@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
 
 export const StyledCardContainer = styled('div')`
@@ -13,7 +14,7 @@ export const StyledCardContainer = styled('div')`
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     width: 80%;
   }
 `
@@ -66,4 +67,8 @@ export const StyledCardH5 = styled('h5')`
   &:last-child {
     margin-bottom: 0;
   }
+`
+
+export const StyledHeartIcon = styled(FontAwesomeIcon)`
+  color: red;
 `

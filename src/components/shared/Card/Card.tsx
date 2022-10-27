@@ -1,3 +1,5 @@
+import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { FC } from 'react'
 import { useTranslation } from 'react-i18next'
 
@@ -10,6 +12,7 @@ import {
   StyledCardH5,
   StyledCardHeader,
   StyledCardHeaderText,
+  StyledHeartIcon,
   StyledImage
 } from './Card.styles'
 import { ICardInterface } from './Card.types'
@@ -19,12 +22,16 @@ const Card: FC<ICardInterface> = ({
   age = -1,
   description = '',
   url = '',
-  loading = false
+  loading = false,
+  favorite = false,
+  onClick = () => {}
 }) => {
   const { t } = useTranslation('global')
 
   return (
-    <StyledCardContainer>
+    <StyledCardContainer onClick={onClick}>
+      <StyledHeartIcon icon={favorite ? faHeart : faHeartRegular} />
+
       {loading ? (
         <LoadingSpinner />
       ) : (

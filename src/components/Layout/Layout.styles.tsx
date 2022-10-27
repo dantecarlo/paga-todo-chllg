@@ -5,7 +5,7 @@ export const StyledBody = styled('div')`
   flex-direction: column;
   padding: 1rem 2rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     padding: 1rem;
   }
 `

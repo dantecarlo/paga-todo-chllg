@@ -3,4 +3,5 @@ export interface IBankData {
   age: number
   description: string
   url: string
+  favorite?: false
 }

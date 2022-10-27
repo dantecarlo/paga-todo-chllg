@@ -9,7 +9,7 @@ export const StyledHeader = styled('header')`
   border: 1px solid rgba(242, 242, 242, 0.1);
   padding: 1rem 3rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     padding: 1rem;
   }
 `
@@ -17,7 +17,7 @@ export const StyledNav = styled('nav')`
   display: flex;
   justify-content: flex-start;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     justify-content: center;
   }
 `
@@ -31,7 +31,7 @@ export const StyledUl = styled('ul')`
 
 export const StyledLi = styled('li')`
   margin: 0 1rem;
-  background: rgba(255, 255, 255, 0.56);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.7px);

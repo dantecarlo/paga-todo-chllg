@@ -4,4 +4,6 @@ export interface ICardInterface {
   description: string
   url: string
   loading: boolean
+  favorite?: boolean
+  onClick?: () => void
 }
