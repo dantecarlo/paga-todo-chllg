@@ -1,25 +1,31 @@
 import useFetchAndLoad from 'hooks/useFetchAndLoad'
-import { useEffect, useState } from 'react'
+import useLocalStorage from 'hooks/useLocalStorage'
+import { isEmpty } from 'lodash'
+import { useEffect } from 'react'
+import { LOCAL_STORAGE_KEYS } from 'utils/constants/localStorage.constants'
 
 import { IBankData } from '../Banks.types'
 import { loadBanks } from '../services/Banks.services'
 
 const useBanks = () => {
-  const [bankData, setBankData] = useState<IBankData[]>()
+  const [bankDataLocalStorage, setBankDataLocalStorage] = useLocalStorage(
+    LOCAL_STORAGE_KEYS.BANK_DATA,
+    [] as IBankData[]
+  )
 
   const { loading, callEndpoint } = useFetchAndLoad()
 
   const fetchBanks = async () => {
     const bankApiData = await callEndpoint(loadBanks())
-    setBankData(bankApiData.data)
+    setBankDataLocalStorage(bankApiData.data)
   }
 
   useEffect(() => {
-    fetchBanks()
+    if (isEmpty(bankDataLocalStorage)) fetchBanks()
   }, [])
 
   return {
-    bankData,
+    bankData: bankDataLocalStorage as IBankData[],
     loading
   }
 }
