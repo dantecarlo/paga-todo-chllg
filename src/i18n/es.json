@@ -1,7 +1,18 @@
 {
   "Component": {
     "Header": {
-      "Bank": "Bancos"
+      "Banks": "Bancos"
+    },
+    "Card": {
+      "Bank": "Banco",
+      "Age": "Edad",
+      "Description": "Descripción"
+    }
+  },
+  "Screen": {
+    "Bank": {
+      "Banks": "Bancos",
+      "Favorite": "Favoritos"
     }
   }
 }

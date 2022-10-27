@@ -1,5 +1,6 @@
 import './index.css'
 import './i18n/config'
+import '@fontsource/montserrat'
 
 import App from 'App'
 import Layout from 'components/Layout'

@@ -19,7 +19,7 @@ const Header = () => {
         <StyledUl>
           <StyledLi>
             <StyledLink to={home}>
-              {t('Component.Header.Bank') as string}
+              {t('Component.Header.Banks') as string}
             </StyledLink>
           </StyledLi>
         </StyledUl>

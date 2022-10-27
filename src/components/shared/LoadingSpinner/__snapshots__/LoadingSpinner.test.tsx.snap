@@ -1,57 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Header /> render correctly 1`] = `
+exports[`<Card /> render correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <header
-        class="sc-bcXHqe bdPmnm"
-      >
-        <nav
-          class="sc-gswNZR hBKVXF"
-        >
-          <ul
-            class="sc-dkrFOg kmnmhf"
-          >
-            <li
-              class="sc-hLBbgP eruGEs"
-            >
-              <a
-                class="sc-eDvSVe jnmMQG"
-                href="/"
-              >
-                Component.Header.Banks
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <div
+        class="sc-bcXHqe cYAVGL"
+      />
     </div>
   </body>,
   "container": <div>
-    <header
-      class="sc-bcXHqe bdPmnm"
-    >
-      <nav
-        class="sc-gswNZR hBKVXF"
-      >
-        <ul
-          class="sc-dkrFOg kmnmhf"
-        >
-          <li
-            class="sc-hLBbgP eruGEs"
-          >
-            <a
-              class="sc-eDvSVe jnmMQG"
-              href="/"
-            >
-              Component.Header.Banks
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <div
+      class="sc-bcXHqe cYAVGL"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
